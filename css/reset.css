@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 *, *::before, *::after {
    box-sizing: border-box;
@@ -39,3 +40,46 @@ ol, ul, li {
 table {
    border-collapse: collapse;
 }
+=======
+
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+* {
+   margin: 0;padding: 0;
+   line-height: 1;
+   font: inherit;color: inherit;
+}
+
+body {
+   -webkit-font-smoothing: antialiased;
+}
+
+a {text-decoration: none;}
+
+img, picture, video, canvas, svg {
+   display: block;
+   max-width: 100%;
+}
+
+input, button, textarea, select {
+   outline: none;
+   border: none;
+}
+button {
+   background: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+   overflow-wrap: break-word;
+}
+
+ol, ul, li {
+   list-style: none;
+}
+
+table {
+   border-collapse: collapse;
+}
+>>>>>>> ba30bd59ec44ac22e0797e6056736b0bc9073e7f

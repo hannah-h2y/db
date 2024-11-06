@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
 /* 한글 */
@@ -58,3 +59,65 @@
    src: url(../Fonts/NotoSerif-Light.ttf);
    font-weight: 300;
 }
+=======
+@charset "UTF-8";
+
+/* 한글 */
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../Fonts/Pretendard-ExtraBold.otf);
+   font-weight: 800;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../Fonts/Pretendard-Bold.otf);
+   font-weight: 700;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../Fonts/Pretendard-Medium.otf);
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../Fonts/Pretendard-Regular.otf);
+   font-weight: 400;
+}
+@font-face {
+   font-family: 'Pretendard';
+   src: url(../Fonts/Pretendard-Light.otf);
+   font-weight: 300;
+}
+
+/* 영어 */
+@font-face {
+   font-family: 'NotoSerif';
+   src: url(../Fonts/NotoSerif-Black.ttf);
+   font-weight: 900;
+}
+@font-face {
+   font-family: 'NotoSerif';
+   src: url(../Fonts/NotoSerif-ExtraBold.ttf);
+   font-weight: 800;
+}
+@font-face {
+   font-family: 'NotoSerif';
+   src: url(../Fonts/NotoSerif-Bold.ttf);
+   font-weight: 700;
+}
+@font-face {
+   font-family: 'NotoSerif';
+   src: url(../Fonts/NotoSerif-Medium.ttf);
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'NotoSerif';
+   src: url(../Fonts/NotoSerif-Regular.ttf);
+   font-weight: 400;
+}
+@font-face {
+   font-family: 'NotoSerif';
+   src: url(../Fonts/NotoSerif-Light.ttf);
+   font-weight: 300;
+}
+>>>>>>> ba30bd59ec44ac22e0797e6056736b0bc9073e7f
