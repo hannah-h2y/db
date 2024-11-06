@@ -163,7 +163,7 @@ const newsSwiper = new Swiper('.news_swiper', {
 // csr
 let a = $('.csr_item').innerHeight() - 66
 $('.csr_item').hover(function() {
-   $('.csr_item_text p').css({'display' : 'flex'})
+   $('.csr_item_text p').css({'display' : '-webkit-box'})
    $(this).find('.csr_item_text').stop().animate({'top' : '30%', 'padding-top' : '50px'},500)
 }, function() {
    $(this).find('.csr_item_text').stop().animate({'top' : a, 'padding-top' : '0'},500)

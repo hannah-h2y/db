@@ -239,18 +239,26 @@ header .side_menu_wrap .side_menu_close_btn {
    object-position: 50% -10%;
 }
 /* main_db_hitory */
+#main_content .db_history {
+   width: 100vw;height: 100vh;
+}
 #main_content .db_mission {
-   display: flex;flex-direction: column;gap: 40px;
+   display: flex;
+   flex-direction: column;gap: 40px;
    align-items: center;justify-content: center;
-   height: 100vh;
+   position: relative;
+   width: 100vw;height: 100vh;
    background: url(../img/main_01.jpg);
    background-repeat: no-repeat;
+   background-size: cover;
    color: #f8f8f8;
    overflow: hidden;
 }
 #main_content .db_mission .fillIMG {
-   position: absolute;z-index: 10;
-   width: 100%;height: 100vh;
+   position: absolute;
+   left: 0;right: 0;top: 0;bottom: 0;
+   z-index: 10;
+   width: 100vw;height: 100vh;
    background: #000;
    opacity: 0.5;
 }
@@ -440,6 +448,7 @@ header .side_menu_wrap .side_menu_close_btn {
    display: flex;justify-content: space-between;
    padding: 0 7%;
    width: 100vw;
+   min-width: 1200px;
    overflow: scroll;
 }
 #main_content .csr .csr_left {
@@ -466,10 +475,11 @@ header .side_menu_wrap .side_menu_close_btn {
 #main_content .csr .csr_left .csr_left_link a {
    display: flex;
    justify-content: space-between;
-   padding-bottom: 3px;
+   padding-bottom: 5px;
    width: 350px;
    border-bottom: 1px solid #ddd;
    font-size: 20px;
+   line-height: 2;
    z-index: 999;
 }
 #main_content .csr .scrollable-section {
@@ -491,7 +501,7 @@ header .side_menu_wrap .side_menu_close_btn {
 #main_content .csr .csr_item_wrap .csr_item {
    position: relative;
    display: flex;flex-direction: column;
-   height: 70%;
+   height: 80%;max-height: 600px;
    width: calc(50% - 40px);
    border-radius: 15px;
    overflow: hidden;
@@ -537,11 +547,24 @@ header .side_menu_wrap .side_menu_close_btn {
    text-align: center;
    overflow: hidden;
    text-overflow: ellipsis;
-   line-height: 1.8;
-   word-wrap: break-word;
+   line-height: 2;
+   white-space: wrap;
+   -webkit-line-clamp: 4;
+   line-clamp: 4;
+   -webkit-box-orient: vertical;
 }
-
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1600px) {
+   #main_content .csr .csr_item_wrap .csr_item {
+      max-height: 500px;
+   }
+   #main_content .csr .csr_item_wrap .c2 {
+      margin-top: 150px;
+   }
+   #main_content .csr .csr_item_wrap .c3 {
+      margin-top: -150px;
+   }
+}
+@media screen and (max-width: 1400px) {
    #main_content .csr .inner {padding: 0 5%;}
    #main_content .csr .csr_left .csr_text h2 {
       font-size: 50px;
@@ -567,36 +590,19 @@ header .side_menu_wrap .side_menu_close_btn {
       font-size: 20px;
    }
 }
-@media screen and (max-width: 1000px) {
-   #main_content .csr .csr_scroll {width: 60%;}
-   #main_content .csr .csr_item_wrap .csr_item {
-      width: 100%;
-   }
-   #main_content .csr .csr_item_wrap .c2 {
-      margin-top: 0;
-   }
-   #main_content .csr .csr_item_wrap .c3 {
-      margin-top: 0;
-   }
-}
-@media screen and (max-width: 750px) {
-   #main_content .csr .csr_scroll {width: 45%;}
-   #main_content .csr_item_text span {
-      font-size: 16px;
-   }
-   #main_content .csr_item_text p {
-      font-size: 14px;
-   }
-}
-@media screen and (max-width: 500px){
+@media screen and (max-width: 560px){
    #main_content .csr .inner {
       display: flex;flex-direction: column;
+      align-items: center;
+      justify-content: center;
       overflow: hidden;gap: 50px;
-      padding: 120px 0 0 0;
+      padding: 50px 0 0 0;
+      min-width: auto;
    }
    #main_content .csr .csr_left {
-      position: relative;text-align: center;
+      position: none;
       height: auto;
+      text-align: center;
    }
    #main_content .csr .csr_left .csr_text {
       padding: 40px 0 20px 0;
@@ -620,6 +626,12 @@ header .side_menu_wrap .side_menu_close_btn {
    #main_content .csr .csr_item_wrap .csr_item {
       width: 200px;
       height: 160px;
+   }
+   #main_content .csr .csr_item_wrap .c2 {
+      margin-top: 0;
+   }
+   #main_content .csr .csr_item_wrap .c3 {
+      margin-top: 0;
    }
    #main_content .csr .csr_img_box {
       height: 160px;
